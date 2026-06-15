@@ -1,0 +1,67 @@
+<style>
+body {
+    background: #f0f2ff;
+    font-family: Arial, sans-serif;
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    background: linear-gradient(to right, #ebebe7, #cf0919);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+form {
+    width: 600px;
+    margin: 20px auto;
+    background: rgb(201, 111, 111);
+    padding: 25px;
+    border-radius: 10px;
+     box-shadow: 0px 0px 15px rgba(0,0,0,0.2); 
+
+label {
+    font-weight: bold;
+    color: #023047;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="number"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #a06c6c;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="radio"] {
+    width: auto;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #00b67f7d;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #023e8a;
+}
+
+</style>

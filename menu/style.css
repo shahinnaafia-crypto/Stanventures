@@ -1,0 +1,157 @@
+body{
+    background-color: #f8f4e9;
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    background-image: url("black.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-left:260px;
+    padding-right:260px;
+    padding-top:0px;
+    padding-bottom:0px;
+    
+}
+
+h1{
+    text-align: center;
+    background: linear-gradient(to right, rgb(220, 216, 220), rgb(238, 195, 5));
+   
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 36px;
+    border-bottom: 3px solid rgb(0, 41, 128);
+
+    margin-bottom: 10px;
+}
+
+h2{
+    color: red;
+    background-color: #ffe6cc;
+    padding: 8px;
+    border-radius: 5px;
+    border-left: 5px solid red;
+}
+
+p{
+    padding: 10px;
+    border-bottom: 1px dashed gray;
+    font-size: 18px;
+}
+
+a{
+    text-decoration: none;
+    color: #efebeb;
+    font-weight: bold;
+}
+
+a:hover{
+    color: red;
+}
+
+body::before{
+    content: "";
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border: 5px solid brown;
+    border-radius: 15px;
+    pointer-events: none;
+}
+
+p:hover{
+    background-color: #fff2cc;
+    border-radius: 5px;
+}
+
+
+
+h2:hover{
+    background-color: #ffd699;
+}
+
+
+
+p{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    border-bottom: 1px dashed gray;
+}
+
+p img{
+    width: 100px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid brown;
+}
+
+a{
+    flex-grow: 1;
+    text-decoration: none;
+    color: rgb(245, 244, 244);
+    font-weight: bold;
+}
+
+p:hover{
+    background-color: #0f0b01;
+    border-radius: 10px;
+}
+p{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.price{
+    margin-left: auto;
+    font-weight: bold;
+    color: green;
+}
+header{
+    background-color: rgba(161, 56, 56, 0.8);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 2px solid gold;
+}
+
+header h3{
+    margin: 0;
+    font-size: 28px;
+}
+
+footer{
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgba(165, 42, 42, 0.8);
+    color: white;
+    text-align: center;
+    padding:15px;
+    margin-top: 30px;
+    border: 3px solid gold;
+    border-radius: 10px;
+}
+
+footer p{
+    display: block;
+    border:none;
+    padding:5px;;
+    margin: 0;
+    justify-content: center;
+}
+#main-header,
+#main-footer{
+    position: relative;
+    left: -300px;
+    right: -300px;
+    width: calc(100% + 600px);
+    box-sizing: border-box;
+}

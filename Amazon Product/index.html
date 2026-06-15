@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Echo — Your Home Just Got Smarter</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ░░ NAVBAR ░░ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">echo.</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#details">Details</a></li>
+        <li><a href="#buy" class="nav-cta">Buy Now</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ░░ HERO ░░ -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="hero-text">
+        <span class="hero-eyebrow">Amazon Echo · Gen 5</span>
+        <h1 class="hero-headline">Meet Echo.<br /><span class="accent-text">Your home just got smarter.</span></h1>
+        <p class="hero-sub">Powered by Alexa, the world's most responsive voice assistant. Play music, control your smart home, set reminders, and more — completely hands-free.</p>
+        <div class="hero-ctas">
+          <a href="#buy" class="btn btn-primary">Shop Now</a>
+          <a href="#features" class="btn btn-outline">Explore Features</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="ring-wrapper">
+          <div class="ring ring-outer"></div>
+          <div class="ring ring-mid"></div>
+          <div class="ring ring-inner"></div>
+          <div class="ring-core">
+            <svg class="speaker-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="32" cy="32" r="30" stroke="currentColor" stroke-width="2" opacity="0.3"/>
+              <path d="M20 24H28L36 16V48L28 40H20V24Z" fill="currentColor"/>
+              <path d="M42 22C45.5 25 47 28.5 47 32C47 35.5 45.5 39 42 42" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M46 18C51 22 53 27 53 32C53 37 51 42 46 46" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="wave wave-1"></div>
+          <div class="wave wave-2"></div>
+          <div class="wave wave-3"></div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll to explore</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ░░ ABOUT ░░ -->
+  <section class="about reveal" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-story">
+          <<span class="section-eyebrow">   Our Mission</span>>
+         <video controls autoplay muted loop>
+        <source src="box.mp4" type="video/mp4">
+  
+    </video>
+
+          <h2 class="section-title">Voice technology that understands you.</h2>
+          <p>Amazon Echo wasn't built to be another gadget. It was designed to disappear into your home — there when you need it, invisible when you don't. From the first generation to today, Echo has become the center of over 10 million smart homes worldwide.</p>
+          <p>Every Echo device ships with Alexa built in: a continuously learning AI that gets smarter every day, understands natural speech, and connects your home into a single cohesive experience.</p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card reveal">
+            <span class="stat-number" data-target="10" data-suffix="M+">0</span>
+            <span class="stat-label">Happy Users</span>
+          </div>
+          <div class="stat-card reveal">
+            <span class="stat-number" data-target="70000" data-suffix="+">0</span>
+            <span class="stat-label">Alexa Skills</span>
+          </div>
+          <div class="stat-card reveal">
+            <span class="stat-number" data-target="30" data-suffix="+">0</span>
+            <span class="stat-label">Languages</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ FEATURES ░░ -->
+  <section class="features reveal" id="features">
+    <div class="container">
+      <span class="section-eyebrow">Capabilities</span>
+      <h2 class="section-title">Everything you expect.<br /><span class="accent-text">Then more.</span></h2>
+      <div class="features-grid">
+
+        <div class="feature-card reveal">
+          <div class="feature-icon">🎵</div>
+          <h3>Crystal Sound</h3>
+          <p>3" woofer with dual tweeters deliver 360° immersive audio that fills every corner of the room.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-icon">🎙️</div>
+          <h3>Voice Control</h3>
+          <p>Far-field 7-microphone array hears you clearly across the room — even with music playing.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-icon">🏠</div>
+          <h3>Smart Home Hub</h3>
+          <p>Control lights, thermostats, locks, and 100+ compatible devices with a single voice command.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-icon">📅</div>
+          <h3>Daily Routines</h3>
+          <p>Set reminders, check your calendar, manage lists, and stay on top of your day effortlessly.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-icon">🔒</div>
+          <h3>Privacy First</h3>
+          <p>Hardware microphone mute button cuts the mic at the chip level. Your privacy is a switch away.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-icon">🌐</div>
+          <h3>Multi-Room Music</h3>
+          <p>Sync Echo devices across rooms for whole-home audio. One command, every speaker.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ DETAILS / SPECS ░░ -->
+  <section class="details reveal" id="details">
+    <div class="container">
+      <span class="section-eyebrow">Specifications</span>
+      <h2 class="section-title">Under the hood.</h2>
+
+      <div class="specs-grid">
+        <div class="spec-card reveal">
+          <span class="spec-icon">🔊</span>
+          <span class="spec-label">Speaker</span>
+          <span class="spec-value">3" woofer + dual front-firing tweeters</span>
+        </div>
+        <div class="spec-card reveal">
+          <span class="spec-icon">📡</span>
+          <span class="spec-label">Connectivity</span>
+          <span class="spec-value">Wi-Fi 802.11 + Bluetooth 5.0</span>
+        </div>
+        <div class="spec-card reveal">
+          <span class="spec-icon">🎙️</span>
+          <span class="spec-label">Voice Array</span>
+          <span class="spec-value">Far-field 7-mic array</span>
+        </div>
+        <div class="spec-card reveal">
+          <span class="spec-icon">⚡</span>
+          <span class="spec-label">Power</span>
+          <span class="spec-value">30W adapter included</span>
+        </div>
+        <div class="spec-card reveal">
+          <span class="spec-icon">📱</span>
+          <span class="spec-label">Compatibility</span>
+          <span class="spec-value">iOS · Android · Alexa App</span>
+        </div>
+        <div class="spec-card reveal">
+          <span class="spec-icon">🎨</span>
+          <span class="spec-label">Colors</span>
+          <span class="spec-value">Three finishes available</span>
+        </div>
+      </div>
+
+      <!-- Color Switcher -->
+      <div class="color-switcher reveal">
+        <p class="switcher-label">Choose your finish</p>
+        <div class="color-dots">
+          <button class="color-dot dot-charcoal active" data-color="#00D4FF" data-name="Charcoal" title="Charcoal"></button>
+          <button class="color-dot dot-white" data-color="#E8F4F8" data-name="Glacier White" title="Glacier White"></button>
+          <button class="color-dot dot-blue" data-color="#7B61FF" data-name="Deep Sea Blue" title="Deep Sea Blue"></button>
+        </div>
+        <span class="color-name" id="colorName">Charcoal</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ BUY CTA ░░ -->
+  <section class="buy-cta reveal" id="buy">
+    <div class="container">
+      <div class="buy-inner">
+        <div class="buy-ring-mini">
+          <div class="ring ring-outer"></div>
+          <div class="ring ring-mid"></div>
+          <div class="ring ring-inner"></div>
+          <div class="ring-core ring-core-sm">
+            <span>🔊</span>
+          </div>
+        </div>
+        <h2 class="section-title">Ready to meet Echo?</h2>
+        <p>Starting at <strong class="price accent-text">₹4,499.40</strong> — with free shipping on all orders.</p>
+        <a href="#" class="btn btn-primary btn-lg">Order Now — ₹4,499.40 </a>
+        <span class="buy-note">30-day free return · 1-year warranty · Ships in 2 days</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ FOOTER ░░ --> 
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo">echo.</a>
+          <p>Smarter homes. Simpler lives.</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Twitter">𝕏</a>
+            <a href="#" aria-label="Instagram">◉</a>
+            <a href="#" aria-label="YouTube">▶</a>
+            <a href="#" aria-label="Facebook">ƒ</a>
+          </div>
+        </div>
+        <div class="footer-links-group">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="#">Echo Dot</a></li>
+            <li><a href="#">Echo Studio</a></li>
+            <li><a href="#">Echo Show</a></li>
+            <li><a href="#">Echo Flex</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-group">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About Amazon</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-group">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Setup Guide</a></li>
+            <li><a href="#">Alexa Skills</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Amazon Echo Clone · Built for Learning</span>
+        <span>Privacy Policy · Terms of Service</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
