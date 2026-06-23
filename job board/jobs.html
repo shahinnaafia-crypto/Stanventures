@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Browse Jobs | Worklane</title>
+    <link rel="icon" href="favicon.png" type="image">
+    <!-- Google Fonts -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet"
+        href="style.css">
+
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+
+                <i class="fa-solid fa-briefcase"></i>
+
+                <span>Worklane</span>
+
+            </div>
+
+            <ul class="nav-links">
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="jobs.html" class="active">Jobs</a></li>
+
+                <li><a href="companies.html">Companies</a></li>
+
+                <li><a href="about.html">About</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+            <a href="post-job.html"
+                class="primary-btn">
+
+                Post a Job
+
+            </a>
+
+        </nav>
+
+    </header>
+
+    <!-- ================= PAGE HEADER ================= -->
+
+    <section class="page-header">
+
+        <h1>Browse Jobs</h1>
+
+        <p>
+
+            Find thousands of verified opportunities
+            from trusted companies.
+
+        </p>
+
+    </section>
+
+    <!-- ================= SEARCH ================= -->
+
+    <section class="job-search">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search by job title...">
+
+        <input
+            type="text"
+            id="locationInput"
+            placeholder="Location">
+
+        <button id="searchBtn">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            Search
+
+        </button>
+
+    </section>
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="jobs-layout">
+
+        <!-- Sidebar -->
+
+        <aside class="filter-sidebar">
+
+            <h2>Filters</h2>
+
+            <div class="filter-box">
+
+                <label>Category</label>
+
+                <select id="categoryFilter">
+
+                    <option value="all">All</option>
+
+                    <option>Technology</option>
+
+                    <option>Design</option>
+
+                    <option>Marketing</option>
+
+                    <option>Healthcare</option>
+
+                    <option>Finance</option>
+
+                </select>
+
+            </div>
+
+            <div class="filter-box">
+
+                <label>Job Type</label>
+
+                <select id="typeFilter">
+
+                    <option value="all">All</option>
+
+                    <option>Full-Time</option>
+
+                    <option>Part-Time</option>
+
+                    <option>Remote</option>
+
+                    <option>Internship</option>
+
+                </select>
+
+            </div>
+
+            <div class="filter-box">
+
+                <label>Experience</label>
+
+                <select id="experienceFilter">
+
+                    <option value="all">All</option>
+
+                    <option>Entry</option>
+
+                    <option>Mid</option>
+
+                    <option>Senior</option>
+
+                </select>
+
+            </div>
+
+            <div class="filter-box">
+
+                <label>Sort By</label>
+
+                <select id="sortJobs">
+
+                    <option value="newest">
+                        Newest
+                    </option>
+
+                    <option value="salary">
+                        Salary High-Low
+                    </option>
+
+                </select>
+
+            </div>
+
+        </aside>
+
+        <!-- Job Area -->
+
+        <section class="jobs-container">
+
+            <div class="jobs-top">
+
+                <h2>
+
+                    Latest Opportunities
+
+                </h2>
+
+                <span id="jobCount">
+
+                    0 Jobs
+
+                </span>
+
+            </div>
+
+            <!-- JS Inserts Cards -->
+
+            <div
+                id="jobsGrid"
+                class="jobs-grid">
+
+            </div>
+
+        </section>
+
+    </main>
+
+   
+    <!-- ================= JOB MODAL ================= -->
+
+    <div
+        class="modal"
+        id="jobModal">
+
+        <div class="modal-content">
+
+            <span
+                class="close"
+                id="closeModal">
+
+                &times;
+
+            </span>
+
+            <div id="modalBody">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div>
+
+                <h3>HireNest</h3>
+
+                <p>
+
+                    Connecting talented professionals
+                    with amazing companies.
+
+                </p>
+
+            </div>
+
+            <div>
+
+                <h4>Quick Links</h4>
+
+                <a href="index.html">Home</a>
+
+                <a href="jobs.html">Jobs</a>
+
+                <a href="companies.html">Companies</a>
+
+                <a href="about.html">About</a>
+
+            </div>
+
+            <div>
+
+                <h4>Newsletter</h4>
+
+                <input
+                    type="email"
+                    placeholder="Email Address">
+
+                <button>
+
+                    Subscribe
+
+                </button>
+
+            </div>
+
+            <div>
+
+                <h4>Follow Us</h4>
+
+                <div class="social">
+
+                    <i class="fab fa-facebook"></i>
+
+                    <i class="fab fa-instagram"></i>
+
+                    <i class="fab fa-linkedin"></i>
+
+                    <i class="fab fa-x-twitter"></i>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <p class="copyright">
+
+            © 2026 Worklane
+
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
